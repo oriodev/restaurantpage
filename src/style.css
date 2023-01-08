@@ -1,0 +1,21 @@
+body {
+    padding: 0;
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+    url('../background.jpg')
+    no-repeat
+    top center
+    fixed
+    content-box;
+    background-size: 100% auto;
+}
+
+header {
+    display: flex;
+    gap: 2%;
+    color: white;
+    font-family:  'Oswald', sans-serif;
+}
