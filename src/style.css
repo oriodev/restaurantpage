@@ -15,7 +15,7 @@ body {
     top center
     fixed
     content-box;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 #content {
@@ -61,6 +61,8 @@ body {
     
 }
 
+/* CIRCLES */
+
 .circles {
     display: flex;
     flex-direction: column;
@@ -78,9 +80,52 @@ body {
     margin: 10px;
 }
 
+/* MENU CIRCLES */
+
+.menuCircles {
+
+}
+
+.menuCircles > div {
+    background-color: white;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.menuCircles > div:first-child {
+    margin-bottom: 40px;
+}
+
+.menuCircles > div:last-child {
+    margin-top: 40px;
+}
+
+
 .bottom_line {
     width: 299.01px;
     height: 0px;
     border: 5px solid #FFFFFF;
     margin-left: 2%;
+}
+
+/* MENU STYLING */
+
+.mainSect {
+    background-color: rgba(10, 8, 27, 0.79);;
+    width: 80%;
+    height: 90%;
+}
+
+.mainSect > h2 {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
 }
