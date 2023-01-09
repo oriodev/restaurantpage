@@ -9,16 +9,19 @@ const renderHeader = () => {
     const homeLink = document.createElement('p');
     homeLink.textContent = "HOME";
     homeLink.setAttribute("id", "nav-links");
+    homeLink.setAttribute("class", "home-link");
     header.appendChild(homeLink);
 
     const menuLink = document.createElement('p');
     menuLink.textContent = "MENU";
     menuLink.setAttribute("id", "nav-links");
+    menuLink.setAttribute("class", "menu-link");
     header.appendChild(menuLink);
 
     const aboutLink = document.createElement('p');
     aboutLink.textContent = "ABOUT";
     aboutLink.setAttribute("id", "nav-links");
+    aboutLink.setAttribute("class", "about-link");
     header.appendChild(aboutLink);
 
 }
