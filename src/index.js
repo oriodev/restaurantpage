@@ -2,11 +2,54 @@ import { renderHeader, renderCenter, renderBottomLine } from "./homepage";
 import { renderMenu1, renderMenu2, renderMenu3 } from "./menu";
 import { renderAbout } from "./about";
 
-// render homepage first
-
 renderHeader();
-renderCenter();
-renderBottomLine();
+// render homepage
+
+const homepage = () => {
+    console.log("homepage");
+    renderCenter();
+    renderBottomLine();
+}
+
+// render menu
+
+const menu1 = () => {
+    console.log("menu1");
+    renderMenu1();
+    renderBottomLine();
+}
+
+const menu2 = () => {
+    console.log("menu2");
+    renderMenu2();
+    renderBottomLine();
+}
+
+const menu3 = () => {
+    console.log("menu3");
+    renderMenu3();
+    renderBottomLine();
+}
+
+// render about
+
+const about = () => {
+    console.log("about");
+    renderAbout()
+    renderBottomLine();
+}
+
+// remove everything
+
+const wipe = () => {
+    console.log("wiped");
+    const content = document.getElementById("content");
+
+    while (content.firstChild) {
+
+        content.removeChild(content.lastChild);
+    }
+}
 
 // get the links from the dom
 
@@ -17,13 +60,21 @@ const ABOUT = document.querySelector('.about-link');
 // add event listeners to them
 
 HOME.addEventListener('click', function(event) {
-    console.log("sup");
+    console.log("home pressed");
+    wipe();
+    homepage();
 })
 
 MENU.addEventListener('click', function(event) {
-    console.log("menuuuu");
+    console.log("menu pressed");
+    wipe();
+    menu1();
 })
 
 ABOUT.addEventListener('click', function(event) {
-    console.log("abttt the wooow");
+    console.log("about pressed");
+    wipe();
+    about();
 })
+
+homepage();
