@@ -1,5 +1,5 @@
 import { renderHeader, renderCenter, renderBottomLine } from "./homepage";
-import { renderMenu1, renderMenu2, renderMenu3 } from "./menu";
+import { renderMenu1 } from "./menu";
 import { renderAbout } from "./about";
 
 renderHeader();
@@ -13,23 +13,12 @@ const homepage = () => {
 
 // render menu
 
-const menu1 = () => {
+const menu = () => {
     console.log("menu1");
     renderMenu1();
     renderBottomLine();
 }
 
-const menu2 = () => {
-    console.log("menu2");
-    renderMenu2();
-    renderBottomLine();
-}
-
-const menu3 = () => {
-    console.log("menu3");
-    renderMenu3();
-    renderBottomLine();
-}
 
 // render about
 
@@ -45,9 +34,7 @@ const wipe = () => {
     console.log("wiped");
     const content = document.getElementById("content");
 
-    while (content.childNodes.length > 4) {
-
-        console.log("removing " + content.lastChild.id);
+    while (content.childNodes.length > 2) {
 
         content.removeChild(content.lastChild);
     }
@@ -70,7 +57,7 @@ HOME.addEventListener('click', function(event) {
 MENU.addEventListener('click', function(event) {
     console.log("menu pressed");
     wipe();
-    menu1();
+    menu();
 })
 
 ABOUT.addEventListener('click', function(event) {
