@@ -1,6 +1,7 @@
 import { renderHeader, renderCenter, renderBottomLine } from "./homepage";
 import { renderMenu1 } from "./menu";
 import { renderAbout } from "./about";
+import './style.css';
 
 renderHeader();
 // render homepage
