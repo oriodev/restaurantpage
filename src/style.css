@@ -16,15 +16,11 @@ body {
     fixed
     content-box;
     background-size: cover;
-
-    display: grid;
-    grid-template-rows: 10% 90%;
-
 }
 
 #content {
     display: grid;
-    grid-template-rows: 80% 10%;
+    grid-template-rows: 10% 80% 10%;
     height: 100vh;
 }
 

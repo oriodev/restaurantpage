@@ -45,7 +45,9 @@ const wipe = () => {
     console.log("wiped");
     const content = document.getElementById("content");
 
-    while (content.firstChild) {
+    while (content.childNodes.length > 4) {
+
+        console.log("removing " + content.lastChild.id);
 
         content.removeChild(content.lastChild);
     }

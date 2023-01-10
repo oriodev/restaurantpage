@@ -1,11 +1,10 @@
 const renderHeader = () => {
 
     const content = document.getElementById("content");
-    const body = document.getElementById("body");
 
     const header = document.createElement('div');
     header.setAttribute("class", "header");
-    body.appendChild(header);
+    content.appendChild(header);
 
     const homeLink = document.createElement('p');
     homeLink.textContent = "HOME";
